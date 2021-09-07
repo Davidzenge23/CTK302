@@ -6,9 +6,9 @@ function draw() {
 
   background(3, 15, 51);
 
-
+//Wall
   fill(89, 60, 6);
-  rect(0, 290, 2000);
+  rect(0, 290, 400);
 
   //Ground
   fill(135, 88, 1);
