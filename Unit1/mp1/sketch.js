@@ -154,7 +154,6 @@ text('AUTO SHOP', 519, 290);
   rect(0,370,1033,1033);
 
 
-
      //Electricity Windmill
 
  fill(247, 249, 252);
