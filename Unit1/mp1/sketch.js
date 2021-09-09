@@ -8,7 +8,7 @@ function draw() {
 
 //Wall
  fill(89, 60, 6) ;
-  rect(0,290,800);
+  rect(0,290,800,100);
 
   //Ground
   fill(135, 88, 1);
@@ -147,7 +147,7 @@ text('AUTO SHOP', 519, 290);
 
 
   fill(89, 60, 6) ;
-  rect(0,290,2000);
+  rect(0,290,2000,100);
 
   //Ground
   fill(135, 88, 1);
