@@ -152,9 +152,9 @@ text('AUTO SHOP', 519, 290);
   //Ground
   fill(135, 88, 1);
   rect(0,370,1033,1033);
+//yo
 
-
-     //Electricity Windmill
+   //Electricity Windmill
 
  fill(247, 249, 252);
      push();
