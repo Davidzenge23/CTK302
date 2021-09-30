@@ -39,7 +39,7 @@ function draw() {
       break;
 
     case 3:
-      background("orange");
+      background("Orange");
       break;
 
 
