@@ -45,7 +45,7 @@ function draw() {
 
   }
 
-  fill('Blue');
+  fill('Blue');s
   rect(100, 100, 100, 100);
 
 
