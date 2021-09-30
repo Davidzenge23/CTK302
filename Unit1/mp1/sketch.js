@@ -15,6 +15,10 @@ function draw() {
   rect(0,370,1033,1033);
 
 
+
+
+
+
  //Electricity Windmill
 
  fill(247, 249, 252);
@@ -98,6 +102,10 @@ rect(80,205,2,85);
 
 
 
+
+
+
+
    push();
   translate(width * 0.2, height * 0.2);
   rotate(frameCount / 50.0);
@@ -119,6 +127,8 @@ noStroke();
    ellipse(50,1030,3,3)
    ellipse(300,100,3,3)
 
+
+
     ellipse(700,140,3,3)
    ellipse(760,160,3,3)
    ellipse(750,10,3,3)
@@ -132,6 +142,8 @@ noStroke();
 textSize(17.5);
 text('AUTO SHOP', 519, 290);
 
+  textSize(14);
+text("Night is to see the dreams",488,46);
 
 
 
@@ -147,11 +159,12 @@ text('AUTO SHOP', 519, 290);
 
 
   fill(89, 60, 6) ;
-  rect(0,290,2000,100);
+  rect(0,290,800,100);
 
   //Ground
   fill(135, 88, 1);
   rect(0,370,1033,1033);
+
 
 
      //Electricity Windmill
@@ -251,6 +264,9 @@ rect(80,205,2,85);
   ellipse(210,340,10,10);
   ellipse(260,340,10,10);
 
+
+
+
  //Auto Shop
   fill(74, 69, 69);
   rect(480,240,180,140);
@@ -269,6 +285,10 @@ rect(80,205,2,85);
   textSize(17.5);
   text('AUTO SHOP', 519, 290);
 
+    textSize(14);
+text("Night is to see the dreams",488,46);
+    textSize(19);
+    text("& Day is to make them true",488,70);
 
  //Star/ Sun
   fill(249, 237, 141);
@@ -282,7 +302,15 @@ rect(80,205,2,85);
   fill(247, 247, 245);
 rect(315,205,2,85);
 
+
+
+
+
   }
+
+
+
+
 
 }
 function star(x, y, radius1, radius2, npoints) {
@@ -298,6 +326,7 @@ function star(x, y, radius1, radius2, npoints) {
     vertex(sx, sy);
   }
   endShape(CLOSE);
+
 
 }
 // record the mouse location in console when clicked

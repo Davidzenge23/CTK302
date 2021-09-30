@@ -33,7 +33,7 @@ function draw() {
 
 //   rect(vol * 300, 150, 50, 50);
 
- x = map(vol, 0, .2, 0, width) ;
+x = map(vol, 0, .2, 0, width) ;
 rect(x, 200, 50, 50);
 
 }
