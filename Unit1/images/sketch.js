@@ -4,7 +4,7 @@ function setup() {
   createCanvas(500, 500);
   camera = loadImage("assets/Camera.jpg");
   soccer = loadImage("assets/Soccer.jpg");
-  videogame = loadImage("assets/videogame.jpg");
+  videogame = loadImage("assets/videogames.jpg");
   imageMode(CENTER);
 }
 
