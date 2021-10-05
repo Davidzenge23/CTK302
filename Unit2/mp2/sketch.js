@@ -4,12 +4,14 @@ let vel =0
 let x = 0
 var taxi;
 var titlescreen;
+var city;
 
 function setup() {
   createCanvas(700, 500);
 
 titlescreen = loadImage("assets/titlescreens.jpg");
 taxi = loadImage("assets/car.png");
+city = loadImage("assets/city.png");
 }
 
 function draw() {
@@ -20,17 +22,19 @@ function draw() {
 
 
     case 0:
-      image(titlescreen, 0, 0)
+      image(titlescreen, 0, 0);
       vel = 0;
       break;
 
     case 1:
       background('red')
+      image(city,0,0);
       vel = 10;
       break;
 
     case 2:
       background('orange')
+      image(city,0,0);
       vel= 3;
       break;
 
@@ -55,7 +59,9 @@ if (x>width){
   x= 0;
 }
 
-
+function mouseReleased(){
+  if state == 0
+}
 
 
 
