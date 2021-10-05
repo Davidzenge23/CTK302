@@ -6,9 +6,10 @@ var taxi;
 var titlescreen;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(700, 500);
 
 titlescreen = loadImage("assets/titlescreens.jpg");
+taxi = loadImage("assets/car.png");
 }
 
 function draw() {
@@ -47,7 +48,7 @@ function draw() {
 
 // the car
 
-image(titlescreen);
+image(taxi, x, height-100,100,50);
 
 x = x+vel;
 if (x>width){
