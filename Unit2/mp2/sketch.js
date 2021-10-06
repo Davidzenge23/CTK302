@@ -5,13 +5,17 @@ let x = 0
 var taxi;
 var titlescreen;
 var city;
+var citynight;
+var citysunset;
 
 function setup() {
   createCanvas(700, 500);
 
 titlescreen = loadImage("assets/titlescreens.jpg");
 taxi = loadImage("assets/car.png");
-city = loadImage("assets/city.png");
+city = loadImage("assets/city4.png");
+citysunset = loadImage("assets/city5");
+citynight = loadImage("assets/city6");
 }
 
 function draw() {
@@ -27,42 +31,64 @@ function draw() {
       break;
 
     case 1:
-      background('red')
+
       image(city,0,0);
-      vel = 10;
+
+      vel= 10;
+    image(taxi, x, height-100,100,100);
+      x = x+vel;
+      if (x>width){
+        x= 0;
+      }
+
       break;
 
-    case 2:
-      background('orange')
-      image(city,0,0);
-      vel= 3;
-      break;
+//    case 2:
+
+//     image(citynight,0,0);
+//      vel= 3;
+    //  image(taxi, x, height-100,100,100);
+
+  //    x = x+vel;
+    //  if (x>width){
+      //  x= 0;
+    //  }
+      //break;
+
+    //  case 3:
+
+    //    image(citysunset,0,0);
+    //    vel= 3;
+    //    image(taxi, x, height-100,100,100);
+
+    //    x = x+vel;
+      //  if (x>width){
+    //      x= 0;
+        //}
+      //  break;
 
 
   }
   timer++;
-  if (timer > 3 * 60) {
+  if (timer > 8 * 60) {
     timer = 0;
 
     state++;
-    if (state > 2) {
+    if (state > 3) {
       state = 0;
     }
   }
 
-// the car
 
-image(taxi, x, height-100,100,50);
 
-x = x+vel;
-if (x>width){
-  x= 0;
 }
 
-function mouseReleased(){
-  if state == 0
-}
+function mouseReleased() {
+  //could have a switch thing here too
+if (state ==0) { //== means check to see if its equal to 0 ; = means equal to 1
+  state = 1 ;
 
 
+  }
 
 }
