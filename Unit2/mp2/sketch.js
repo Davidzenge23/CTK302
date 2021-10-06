@@ -14,8 +14,8 @@ function setup() {
 titlescreen = loadImage("assets/titlescreens.jpg");
 taxi = loadImage("assets/car.png");
 city = loadImage("assets/city4.png");
-citysunset = loadImage("assets/city5");
-citynight = loadImage("assets/city6");
+citysunset = loadImage("assets/cityO.png");
+citynight = loadImage("assets/city6.png");
 }
 
 function draw() {
@@ -43,17 +43,17 @@ function draw() {
 
       break;
 
-//    case 2:
+  case 2:
 
-//     image(citynight,0,0);
-//      vel= 3;
-    //  image(taxi, x, height-100,100,100);
+image(citynight,0,0);
+    vel= 3;
+     image(taxi, x, height-100,100,100);
 
-  //    x = x+vel;
-    //  if (x>width){
-      //  x= 0;
-    //  }
-      //break;
+   x = x+vel;
+  if (x>width){
+     x= 0;
+    }
+    break;
 
     //  case 3:
 
