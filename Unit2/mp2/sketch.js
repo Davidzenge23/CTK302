@@ -95,6 +95,7 @@ if (state ==0) { //== means check to see if its equal to 0 ; = means equal to 1
 } else {
   if (state > 0){
     x = 0 ;
+    vel = 0 ;
   }
 }
 
