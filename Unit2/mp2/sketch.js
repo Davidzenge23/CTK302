@@ -88,9 +88,10 @@ function mouseReleased() {
 if (state ==0) { //== means check to see if its equal to 0 ; = means equal to 1
   state = 1 ;
 
-  vel= 0 ;
-
-
+} else {
+  if (state > 1){
+    x = 0 ;
   }
+}
 
 }
