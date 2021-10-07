@@ -55,17 +55,17 @@ image(citynight,0,0);
     }
     break;
 
-    //  case 3:
+   case 3:
 
-    //    image(citysunset,0,0);
-    //    vel= 3;
-    //    image(taxi, x, height-100,100,100);
+     image(citysunset,0,0);
+     vel= 3;
+    image(taxi, x, height-100,100,100);
 
-    //    x = x+vel;
-      //  if (x>width){
-    //      x= 0;
-        //}
-      //  break;
+       x = x+vel;
+      if (x>width){
+    x= 0;
+      }
+      break;
 
 
   }
@@ -87,6 +87,8 @@ function mouseReleased() {
   //could have a switch thing here too
 if (state ==0) { //== means check to see if its equal to 0 ; = means equal to 1
   state = 1 ;
+
+  vel= 0 ;
 
 
   }
