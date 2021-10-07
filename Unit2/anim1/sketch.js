@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  background("grey");
+  background("orange");
 image(airplane, x ,200,200,200);
 
 
