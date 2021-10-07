@@ -36,6 +36,9 @@ function draw() {
 
       vel= 10;
     image(taxi, x, height-100,100,100);
+
+text("The goal of the game is for you to stop the taxi! \n Click To STOP ",100,100)
+
       x = x+vel;
       if (x>width){
         x= 0;
@@ -46,6 +49,7 @@ function draw() {
   case 2:
 
 image(citynight,0,0);
+
     vel= 3;
      image(taxi, x, height-100,100,100);
 
@@ -70,7 +74,7 @@ image(citynight,0,0);
 
   }
   timer++;
-  if (timer > 8 * 60) {
+  if (timer > 10 * 60) {
     timer = 0;
 
     state++;
@@ -89,7 +93,7 @@ if (state ==0) { //== means check to see if its equal to 0 ; = means equal to 1
   state = 1 ;
 
 } else {
-  if (state > 1){
+  if (state > 0){
     x = 0 ;
   }
 }
