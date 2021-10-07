@@ -2,9 +2,13 @@ var mic;
 var vol;
 var c = 'green';
 let x = 0 ;
+let superhero1 ;
+let superhero2 ;
 
 function setup() {
   createCanvas(400, 400);
+  superhero1 = loadImage("assets/sup1.png");
+  superhero2 = loadImage("assets/sup2.png");
 
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
@@ -29,12 +33,12 @@ function draw() {
   textSize(18);
   text("Click the screen first to give\npermission for mic input.\nMy volume is " + vol, 10, 60);
 
-  rect(vol * 100, 100, 50, 50);
+  image(superhero2,vol * 100, 100, 50, 50);
 
 //   rect(vol * 300, 150, 50, 50);
 
 x = map(vol, 0, .2, 0, width) ;
-rect(x, 200, 50, 50);
+image(superhero1, x, 200, 50, 50);
 
 }
 
