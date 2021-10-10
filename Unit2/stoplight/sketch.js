@@ -2,9 +2,11 @@ let timer = 0
 let state = 0
 let vel =0
 let x = 0
+let taxi
 function setup() {
   createCanvas(800, 800);
   rectMode(CENTER);
+  taxi = loadImage("assets/TAXI.png");
 }
 
 function draw() {
@@ -59,7 +61,7 @@ background(230);
 
 // the car
 fill('purple')
-rect( x, height-100,100,50);
+image(taxi, x, height-100,100,50);
 
 x = x+vel;
 if (x>width){
