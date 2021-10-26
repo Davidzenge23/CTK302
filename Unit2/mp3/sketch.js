@@ -10,7 +10,7 @@ let plane;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
-  plane = loadImage("assets/Airplane.png");
+  //plane = loadImage("assets/Airplane.png");
 
   // Spawn many objects
   for (let i = 0; i < maxCars; i++) {
@@ -93,7 +93,7 @@ function game() {
   text("cars left = " + cars.length + " cars eaten = " + carsEaten, 20, 30);
   // frog
   fill("green");
-  plane(frogPos.x, frogPos.y, 50, 50);
+  ellipse(frogPos.x, frogPos.y, 50, 50);
   checkForKeys();
 }
 
