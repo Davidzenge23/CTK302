@@ -4,13 +4,14 @@ let maxCars = 2;
 let timer = 0;
 let state = 0;
 let carsEaten = 0;
-let plane;
+let package;
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
-  //plane = loadImage("assets/Airplane.png");
+
+package = loadImage("assets/package.png");
 
   // Spawn many objects
   for (let i = 0; i < maxCars; i++) {
@@ -130,7 +131,7 @@ class Car {
   display() {
     fill(this.col);
     textSize(this.size);
-    text("HELLO", this.pos.x, this.pos.y);
+    package(this.pos.x, this.pos.y);
   }
 
   move() {
