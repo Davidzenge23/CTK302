@@ -4,12 +4,13 @@ let maxCars = 2;
 let timer = 0;
 let state = 0;
 let carsEaten = 0;
+let plane;
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
-  frogPos = loadImage("assets/Airplane.png");
+  plane = loadImage("assets/Airplane.png");
 
   // Spawn many objects
   for (let i = 0; i < maxCars; i++) {
@@ -92,7 +93,7 @@ function game() {
   text("cars left = " + cars.length + " cars eaten = " + carsEaten, 20, 30);
   // frog
   fill("green");
-  ellipse(frogPos.x, frogPos.y, 50, 50);
+  plane(frogPos.x, frogPos.y, 50, 50);
   checkForKeys();
 }
 
