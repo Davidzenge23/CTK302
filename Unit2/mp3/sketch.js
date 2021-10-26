@@ -5,9 +5,11 @@ let timer = 0;
 let state = 0;
 let carsEaten = 0;
 
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
+  frogPos = loadImage("assets/Airplane.png");
 
   // Spawn many objects
   for (let i = 0; i < maxCars; i++) {
