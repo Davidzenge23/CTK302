@@ -86,14 +86,14 @@ function draw() {
     // break;
 
     case 0:
-      song1.play();
+    //  song1.play();
       myState = 1
       break;
 
     case 1: // splash screen
       image(splashBG, width / 2, height / 2);
       fill('red');
-      textFont(paint, 20);
+    //  textFont(paint, 20);
       text('Grab the package or get destroy', 60, 60);
       textSize(35);
       text('Or Explode', 300, 300);
@@ -120,8 +120,8 @@ function draw() {
       // break;
 
     case 3:
-      song1.stop();
-      fanfare.play();
+      //song1.stop();
+      //fanfare.play();
       myState = 4
       break;
 
@@ -183,7 +183,7 @@ function mouseReleased() {
 
     case 7: //the lose state
       resetTheGame();
-      lostsound.stop();
+  //    lostsound.stop();
       myState = 0;
       break;
   }
