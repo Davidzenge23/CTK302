@@ -19,9 +19,9 @@ function preload() {
 //  lostsound = loadSound('assets/hit-crunch-distortion-reverb-trail-off_MJxR43Ed.mp3');
 //  lostsound.stop();
 
-  //song1 = loadSound("assets/ForATK302_mixdown.mp3");
-  //song1.loop();
-  //song1.stop();
+  song1 = loadSound("assets/Main.mp3");
+  song1.loop();
+  song1.stop();
 
   //fanfare.loop();
   //fanfare.stop();
@@ -86,7 +86,7 @@ function draw() {
     // break;
 
     case 0:
-    //  song1.play();
+     song1.play();
       myState = 1
       break;
 
@@ -97,7 +97,7 @@ function draw() {
       text('Grab the package or get destroy', 60, 60);
       textSize(35);
       text('Or Explode', 300, 300);
-      textSize(50);
+      textSize(35);
       text('Click to Begin', x, height / 2);
       x +=5;
         if (x > 800) {
