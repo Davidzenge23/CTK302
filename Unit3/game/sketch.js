@@ -16,8 +16,8 @@ var x = 0;
 var bottlesLeft = 0;
 
 function preload() {
-//  lostsound = loadSound('assets/hit-crunch-distortion-reverb-trail-off_MJxR43Ed.mp3');
-//  lostsound.stop();
+ lostsound = loadSound('assets/lostsound.mp3');
+ lostsound.stop();
 
   song1 = loadSound("assets/First.mp3");
   song1.loop();
@@ -95,8 +95,8 @@ function draw() {
       fill('red');
     //  textFont(paint, 20);
       text('Grab the package or get destroy', 60, 60);
-      textSize(35);
-      text('Or Explode', 300, 300);
+      textSize(15);
+    //text('Or Explode', 300, 300);
       textSize(35);
       text('Click to Begin', x, height / 2);
       x +=5;
@@ -144,16 +144,16 @@ function draw() {
       break;
 
     case 6:
-  //    lostsound.play();
-  //    song1.stop();
+     lostsound.play();
+    song1.stop();
       myState = 7
       break;
 
     case 7: // the lose state
-      // if (myState == 6){
-      //   song1.pause();
-      //   lostsound.play();
-      // }
+       if (myState == 6){
+        song1.pause();
+         lostsound.play();
+      }
       image(losepic, width / 2, height / 2);
       fill('white');
     //  textFont(paint, 20);
