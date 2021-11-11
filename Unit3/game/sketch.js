@@ -94,7 +94,7 @@ function draw() {
       image(splashBG, width / 2, height / 2);
       fill('red');
     //  textFont(paint, 20);
-      text('Grab the package or get destroy', 60, 60);
+      text('Grab the packages or get destroy', 60, 60);
       textSize(15);
     //text('Or Explode', 300, 300);
       textSize(35);
@@ -134,7 +134,7 @@ function draw() {
       image(winpic, width / 2, height / 2);
       fill('red');
       //textFont(paint, 20);
-      text('You got all the package', 450, 300);
+      text('You got all the packages', 450, 300);
       // song1.stop();
       break;
 
