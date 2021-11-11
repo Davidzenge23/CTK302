@@ -38,7 +38,7 @@ function setup() {
 
   splashBG = loadImage("assets/splashbg.png");
   losepic = loadImage("assets/gamelost.png");
-  winpic = loadImage("assets/splashbg.png")
+  winpic = loadImage("assets/win.png")
   playpic = loadImage("assets/game.png");
 
   // yodaL = loadImage("assets/yodaLeft.gif");
