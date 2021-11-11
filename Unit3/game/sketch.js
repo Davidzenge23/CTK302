@@ -19,7 +19,7 @@ function preload() {
 //  lostsound = loadSound('assets/hit-crunch-distortion-reverb-trail-off_MJxR43Ed.mp3');
 //  lostsound.stop();
 
-  song1 = loadSound("assets/Main.mp3");
+  song1 = loadSound("assets/First.mp3");
   song1.loop();
   song1.stop();
 
