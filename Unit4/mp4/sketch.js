@@ -9,8 +9,8 @@ var yPosition = 0;
 // var bunnyImage;
 var cars = [];
 var frogPos;
-
-
+let plane;
+let bomb;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
@@ -20,7 +20,8 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-
+plane = loadImage("assets/Plane2.png");
+bomb = loadImage("assets/package.png");
   // spawn a bunch of cars
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
@@ -54,8 +55,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  fill('green');
-  ellipse(0, 0, 80, 80);
+  image(Plane2,0, 0, 80, 80);
   pop();
 
 
@@ -145,11 +145,11 @@ function Car() {
   this.display = function() {
 
     // maybe use an image here instead!
-    fill(this.r, this.g, this.b, this.a);
-    ellipse(this.pos.x - 50, this.pos.y, 50, 50);
-    ellipse(this.pos.x + 50, this.pos.y, 50, 50);
-    rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
-
+  //  fill(this.r, this.g, this.b, this.a);
+  //  ellipse(this.pos.x - 50, this.pos.y, 50, 50);
+  //  ellipse(this.pos.x + 50, this.pos.y, 50, 50);
+  //  rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
+images(bomb,this.pos.x, this.pos.y, 100, 100);
   }
 
   this.drive = function() {
