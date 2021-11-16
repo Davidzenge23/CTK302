@@ -55,7 +55,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-image(player, frogPos.x, frogPos.y, 120, 120);
+image(plane, frogPos.x, frogPos.y, 120, 120);
   pop();
 
 
