@@ -31,7 +31,7 @@ function positionPing(position) {
 
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
 
-  background("#2452d1");
+  background("#FFA500");
   fill("white");
   text("lat: " + position.latitude, 10, 40);
   text("long: " + position.longitude, 10, 90);
