@@ -134,7 +134,7 @@ function draw() {
       image(winpic, width / 2, height / 2);
       fill('red');
       //textFont(paint, 20);
-      text('You got all the packages', 450, 300);
+      text('You got all the packages', 60, 700);
       // song1.stop();
       break;
 
