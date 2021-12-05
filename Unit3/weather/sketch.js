@@ -7,7 +7,7 @@ var x = 0;
 var windspeed = 0 ;
 var temp = 0;
 var humid = 0;
-var plane
+let plane
 function setup() {
   createCanvas(400, 400);
 
