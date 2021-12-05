@@ -149,7 +149,7 @@ function Car() {
   //  ellipse(this.pos.x - 50, this.pos.y, 50, 50);
   //  ellipse(this.pos.x + 50, this.pos.y, 50, 50);
   //  rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
-image(bomb,this.pos.x, this.pos.y, 100, 100);
+image(football,this.pos.x, this.pos.y, 100, 100);
   }
 
   this.drive = function() {
