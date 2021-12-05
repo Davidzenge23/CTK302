@@ -7,11 +7,12 @@ var x = 0;
 var windspeed = 0 ;
 var temp = 0;
 var humid = 0;
-
+var plane
 function setup() {
   createCanvas(400, 400);
 
   // HERE is the call to get the weather.
+plane = loadImage("assets/airplane.png");
 
   var myCityString = 'https://api.openweathermap.org/data/2.5/weather?q=Champaign,IL,US&units=imperial&';
 
@@ -57,10 +58,10 @@ function draw() {
 
 
       // cloud
-      fill('white');
-      noStroke();
-      ellipse(x, 300, 200, 100);
-
+    //  fill('white');
+      //noStroke();
+    //  plane(x, 300, 200, 100);
+      plane(x, 100);
       // move the cloud's x position
       x = x + windspeed;
       if (x > width) x = 0;
