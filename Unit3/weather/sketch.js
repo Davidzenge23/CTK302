@@ -61,7 +61,7 @@ function draw() {
     //  fill('white');
       //noStroke();
   //  ellipse(x, 300, 200, 100);
-      plane(x, 300, 200, 100);
+      image(plane,x, 300, 200, 100);
       //plane(x, 100);
       // move the cloud's x position
       x = x + windspeed;
